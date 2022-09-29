@@ -1,0 +1,450 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&display=swap");
+body {
+  font-family: "Poppins", sans-serif;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+}
+
+html {
+  margin: auto;
+  max-width: 1200px;
+}
+
+h1,
+h3 {
+  color: #6b6b6b;
+}
+
+p,
+address {
+  color: #999;
+}
+
+[aria-controls="menu-list"] {
+  display: none;
+}
+
+ul {
+  display: none;
+}
+
+button {
+  background: #6b6b6b;
+  border: 0;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 5px;
+}
+
+[aria-controls="menu-list"] {
+  display: none;
+}
+
+.home {
+  color: #6b6b6b;
+  padding: 20px;
+}
+
+.contact {
+  color: #6b6b6b;
+  padding: 20px;
+}
+
+.aboutUs {
+  color: black;
+}
+
+.menucontainer {
+  margin-left: 450px;
+  margin-top: 50px;
+}
+
+.logocontainer {
+  display: flex;
+  align-items: center;
+}
+
+.navbarcontainer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  align-items: center;
+  color: #6b6b6b;
+}
+
+.navbarone {
+  background-color: #6b6b6b;
+  color: white;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  line-height: 0;
+  margin-left: 15px;
+}
+
+.navbaronepointfive {
+  position: absolute;
+  bottom: 50%;
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+}
+
+.navbartwo {
+  margin-left: 20px;
+}
+.navbartwopointfive {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.navbarthree,
+.navbarfour,
+.navbarfive {
+  margin: 20px;
+}
+
+.navbarfive {
+  margin-right: 20px;
+}
+.navbartwo:hover,
+.navbarthree:hover,
+.navbarfour:hover,
+.navbarfive:hover {
+  cursor: pointer;
+}
+
+.aboutuscontainer {
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+}
+
+.aboutusone {
+  font-weight: bold;
+  font-size: 48px;
+}
+
+.aboutustwo {
+  width: 600px;
+  text-align: center;
+}
+
+.imgcontainer {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+.imgtwelve,
+.imgthirteen,
+.imgfifteen,
+.imgsixteen,
+.imgeightteen,
+.imgnineteen {
+  width: 350px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.imgeleven,
+.imgfourteen,
+.imgseventeen {
+  width: 350px;
+  height: 350px;
+}
+
+.ourteamcontainer {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.ourteamone {
+  font-weight: bold;
+  font-size: 48px;
+}
+
+.employeecontainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  text-align: center;
+  column-width: 100px;
+  margin-left: 300px;
+  margin-right: 300px;
+  column-gap: 20px;
+  color: #6b6b6b;
+  font-weight: bold;
+}
+
+i:hover {
+  cursor: pointer;
+}
+
+img {
+  width: 200px;
+}
+
+.companymediacontainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 50px;
+  background-color: #282828;
+  color: #6b6b6b;
+  font-size: 20px;
+  padding-top: 20px;
+}
+
+.fbook:hover,
+.insta:hover,
+.linked:hover,
+.tweet:hover {
+  cursor: pointer;
+  color: white;
+  font-size: 24px;
+}
+
+..fbook,
+.tweet,
+.insta,
+.linked {
+  color: #999;
+  font-size: 20px;
+}
+
+.contactuscontainer {
+  background-color: #282828;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 0px;
+  text-align: center;
+  justify-content: space-evenly;
+}
+
+.addressone,
+.emailone,
+.phoneone {
+  margin-top: 20px;
+  color: #6b6b6b;
+  font-size: 20px;
+}
+
+.footer {
+  color: #6b6b6b;
+  background-color: #282828;
+  text-align: center;
+  margin-top: 0px;
+  padding-top: 20px;
+  font-size: 14px;
+  padding-bottom: 20px;
+}
+
+@media (max-width: 1024px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  .menucontainer ul {
+    max-height: 0;
+    overflow: hidden;
+    transform: translateX(90);
+    transition: all 0.5s;
+  }
+
+  .menucontainer {
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: 40px;
+    margin-top: 40px;
+  }
+
+  [aria-controls="menu-list"] {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  [aria-expanded="true"] ~ ul {
+    display: grid;
+    max-height: 500px;
+    transform: rotate(0);
+  }
+
+  [aria-expanded="false"] .close {
+    display: none;
+  }
+
+  [aria-expanded="true"] .close {
+    display: inline-block;
+  }
+
+  [aria-expanded="true"] .open {
+    display: none;
+  }
+
+  .logocontainer {
+    position: relative;
+    right: -20px;
+    bottom: 65px;
+  }
+  .navbartwopointfive {
+    display: none;
+  }
+
+  .navbaronepointfive {
+    position: absolute;
+    bottom: 50%;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+  }
+
+  .aboutuscontainer {
+    margin-top: -125px;
+  }
+  .aboutusone {
+    margin: 0px;
+    margin-top: 10%;
+    padding: 0px;
+    font-size: 56px;
+  }
+
+  .aboutustwo {
+    width: 80%;
+    margin: 0px;
+    margin-top: -10%;
+    padding: 0px;
+  }
+
+  .imgcontainer {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+
+  .ourteamcontainer {
+    margin-bottom: 10%;
+  }
+
+  .ourteamone {
+    font-size: 36px;
+  }
+
+  .ourteamtwo {
+    text-align: center;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .employeeone,
+  .employeetwo,
+  .employeethree,
+  .employeefour {
+    font-size: 16px;
+    width: 275px;
+    margin-bottom: 5%;
+  }
+
+  .imgcontainer {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .imgcontainer img {
+    width: 275;
+  }
+
+  .employeecontainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    color: #6b6b6b;
+    font-weight: bold;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .contactuscontainer {
+    font-size: 14px;
+  }
+
+  h3 {
+    margin-top: 20px;
+    padding: 0px;
+  }
+
+  h1 {
+    margin-top: 20px;
+    padding: 0px;
+  }
+}
+
+@media (max-width: 767px) {
+  h1 {
+    font-size: 26px;
+    margin-top: 20px;
+  }
+  .menucontainer {
+    margin-top: 10%;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 5%;
+  }
+
+  .aboutuscontainer {
+    height: 300px;
+  }
+
+  .aboutusone {
+    margin-top: 45px;
+  }
+
+  .aboutustwo {
+    margin-top: -20px;
+  }
+
+  .navbartwo {
+    margin-left: 5px;
+  }
+
+  .fbook,
+  .insta,
+  .tweet,
+  .linked {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .companymediacontainer {
+    padding-top: 10px;
+    font-size: 14px;
+    justify-content: space-evenly;
+    display: flex;
+  }
+
+  .contactuscontainer {
+    display: flex;
+    flex-direction: column;
+    font-size: 11px;
+  }
+
+  .footer {
+    font-size: 8px;
+  }
+}
