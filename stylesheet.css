@@ -8,7 +8,6 @@ body {
 
 html {
   margin: auto;
-  max-width: 1200px;
 }
 
 h1,
@@ -71,6 +70,8 @@ button {
   font-size: 20px;
   align-items: center;
   color: #6b6b6b;
+  max-width: 1400px;
+  margin: auto;
 }
 
 .navbarone {
@@ -170,13 +171,11 @@ button {
 }
 
 .employeecontainer {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
   text-align: center;
-  column-width: 100px;
-  margin-left: 300px;
-  margin-right: 300px;
-  column-gap: 20px;
   color: #6b6b6b;
   font-weight: bold;
 }
@@ -264,6 +263,10 @@ img {
     justify-content: flex-end;
     margin-right: 40px;
     margin-top: 40px;
+  }
+  
+  .employeecontainer {
+    flex-direction: column;
   }
 
   [aria-controls="menu-list"] {
